@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/_LayoutPage1.cshtml";
+}
+
+<body>
+    <!-- contact-form -->
+    <div class="message warning">
+        <div class="inset">
+            <div class="login-head">
+                <h1>Login Form</h1>
+                <div class="alert-close"> </div>
+            </div>
+            <form action="Verify" method="post">
+                <li>
+                    <input type="text" class="text" name="Name" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}"><a href="#" class=" icon user"></a>
+                </li>
+                <div class="clear"> </div>
+                <li>
+                    <input type="password" name="Password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}"> <a href="#" class="icon lock"></a>
+                </li>
+                <div class="clear"> </div>
+                <div class="submit">
+                    <input type="submit" onclick="myFunction()" value="Sign in">
+                    <h4><a href="#">Lost your Password ?</a></h4>
+                    <div class="clear">  </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <div class="clear"> </div>
+    <!--- footer --->
+    <div class="footer">
+        <p>Template by <a href="http://w3layouts.com">w3layouts</a></p>
+    </div>
+</body>
+
